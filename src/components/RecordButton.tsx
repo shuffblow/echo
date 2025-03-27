@@ -3,7 +3,8 @@ import { TouchableOpacity, View, Text, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring, withRepeat } from 'react-native-reanimated';
 import { Audio } from 'expo-av';
-import { startRecording, stopRecording, transcribeAudio } from '../services/aiService';
+import { startRecording, stopRecording } from '../utils/voice';
+import { transcribeAudio } from '../utils/aiService';
 
 interface RecordButtonProps {
   isRecording: boolean;
